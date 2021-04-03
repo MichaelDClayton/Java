@@ -1,9 +1,9 @@
-
+package datastructures;
 
 import datastructures.Employee;
 import datastructures.SimpleHashtable;
 
-public class Main {
+public class RunSimplehashtable {
 
     public static void main(String[] args) {
         Employee janeJones = new Employee("Jane", "Jones", 123);

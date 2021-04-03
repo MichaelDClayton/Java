@@ -10,6 +10,21 @@ public class BinaryTree {
 		
 	}
 	
+	public int getTreeHeight(Node root) {
+		if(root == null)
+			return -1;
+		
+		int left = getTreeHeight(root.leftChild);
+		int right = getTreeHeight(root.rightChild);
+		
+		if(left > right) {
+			return left + 1;
+		}else {
+			return right + 1;
+		}
+		
+	}
+	
 	public void addNode(int val) {
 		Node nodeToAdd = new Node(val);
 		
